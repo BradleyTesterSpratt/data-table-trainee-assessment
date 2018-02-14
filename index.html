@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="content-language" content="en" />
-<meta http-equiv="Content-Type" content="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<link href="main.css" media="all" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="Content-Type" content="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<script src="jquery-2.1.1.js"></script>
+	<script src="script.js"></script>
+	<link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<script src="jquery-2.1.1.js"></script>
-<script>
-$.getJSON('data.json', function (data) {
-    console.log(data);
-});
-</script>
+	<table id ="table">
+		<tr>
+			<td onclick="sortTable(0)">Dates</td>
+			<td onclick="sortTable(1)">BBC Four</td>
+			<td onclick="sortTable(2)">BBC News 24</td>
+			<td onclick="sortTable(3)">BBC One</td>
+			<td onclick="sortTable(4)">BBC Three</td>
+			<td onclick="sortTable(5)">BBC Two</td>
+			<td onclick="sortTable(6)">CBBC</td>
+			<td onclick="sortTable(7)">CBeebies</td>
+		</tr>
+	</table
 </body>
-</html>
+</html> 
